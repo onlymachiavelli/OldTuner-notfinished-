@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title></title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+	</head>
+	<body>
+	<script src="jquery.js"></script>
+		<script src="function.js"></script>
+	<script src="jquery-function.js"></script>
+	
+		<div class="main">
+			<div class="header disabled">
+				<div class="left disabled">
+			
+				<b id="win-title" style="-webkit-app-region: drag" class="disabled">Guitar Chords</b>
+			</div>
+			<div class="right disabled">
+				<!--<button class="min top-btn disabled" >-</button>-->
+				<button class="close top-btn disabled" onclick="window.top.close(); ">X</button>
+			</div>
+			</div>
+			<!--Start Screen-->
+			<div class="start-screen">
+				<div class="shd full-screen">
+					<button class="startbtn disabled">Let's Start !</button>
+				</div>
+			</div>
+			<!--Home Screen-->
+			<div class="home-main">
+				<div class="left disabled left-side">
+					<b id="tit">Select One :</b>
+					<br/><br/>
+					<a class="home"><i class="fa fa-home" aria-hidden="true"></i></a>
+					<br/><br/>
+					<a class="c">C</a>
+					<br/><br/>
+					<a class="ccs">C#</a>
+					<br/><br/>
+					<a class="d">D</a>
+					<br/><br/>
+					<a class="dcs">D#</a>
+					<br/><br/>
+					<a class="e">E</a>
+					<br/><br/>
+					<a class="f">F</a>
+					<br/><br/>
+					<a class="fcs">F#</a>
+					<br/><br/>
+					<a class="g">G</a>
+					<br/><br/>
+					<a class="gcs">G#</a>
+					<br/><br/>
+					<a class="a">A</a>
+					<br/><br/>
+					<a class="acs">A#</a>
+					<br/><br/>
+					<a class="b">B</a>
+					<br/>
+				</div>
+				<div class="right disabled right-side">
+					<!--Home-->
+					<div class="right-home right-bloc disabled">
+						<div id="exc"><b id="tune-title">Tune Your Guitar First</b></div>
+						<div class="left-tuner-btn">
+							<button class="disabled tune-btn gd"onmousedown="d.play()">D</button>
+							<br/>
+							<button class="tune-btn disabled ga"onmousedown="a.play()">A</button>
+							<br/>
+							<button class="tune-btn disabled ge" onmousedown="e.play()">E</button>
+						</div>
+						<img id="head" src="img/tune.jpg" />
+						<div class="right-tuner-btn">
+							<button class="disabled tune-btn gg" onmousedown="g.play()">G</button>
+							<br/>
+							<button class="tune-btn disabled gb" onmousedown="b.play()">B</button>
+							<br/>
+							<button class="tune-btn disabled gee" onmousedown="ee.play()">E</button>
+						</div>
+					</div>
+					<!--c-->
+					<div class="right-c nodisplay right-bloc-tune">
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Cmajor</a></li>
+								<li><a class="minor">Cminor</a></li>
+								<li><a class="5">C5</a></li>
+								<li><a class="7">C7</a></li>
+								<li><a class="maj7">Cmaj7</a></li>
+								<li><a class="m7">Cm7</a></li>
+								<li><a class="sus4">Csus4</a></li>
+								<li><a class="add9">Cadd9</a></li>
+								<li><a class="sus2">Csus2</a></li>
+								<li><a class="7sus4">C7sus4</a></li>
+								<li><a class="7cs9">C7#9</a></li>
+								<li><a class="9">C9</a></li>
+							</ul>
+						</div>
+						<!--c major-->
+						<div class="down-navbar bloc-major">
+							<br/>
+								<b id="title-down-navbar">C Major</b> 
+							<br/>
+							<img src="img/chords/c/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-cmajor" onmousedown="cmajor.play()"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/>
+							<b id="title-down-navbar">C Minor</b>
+							<br/>
+							<img src="img/chords/c/minor.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="cminor.play()" class="button-chords btn-cminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/>
+							<b id="title-down-navbar">C 5</b>
+							<br/>
+							<img src="img/chords/c/5.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="c5.play()" class="button-chords btn-c5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/>
+							<b id="title-down-navbar">C 7</b>
+							<br/>
+							<img src="img/chords/c/7.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="c7.play()" class="button-chords btn-c7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cmaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/>
+							<b id="title-down-navbar">C Maj7</b>
+							<br/>
+							<img src="img/chords/c/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="cmaj7.play()" class="button-chords btn-cmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/>
+							<b id="title-down-navbar">C M7</b>
+							<br/>
+							<img src="img/chords/c/m7.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="cm7.play()" class="button-chords btn-cm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--csus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/>
+							<b id="title-down-navbar">C Sus4</b>
+							<br/>
+							<img src="img/chords/c/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="csus4.play()" class="button-chords btn-csus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cadd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/>
+							<b id="title-down-navbar">C Add9</b>
+							<br/>
+							<img src="img/chords/c/add9.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="cadd9.play()" class="button-chords btn-cadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--csus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/>
+							<b id="title-down-navbar">C Sus2</b>
+							<br/>
+							<img src="img/chords/c/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="csus2.play()" class="button-chords btn-csus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<b id="title-down-navbar">C 7sus4</b>
+							<br/>
+							<img src="img/chords/c/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="c7sus4.play()" class="button-chords btn-c7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/>
+							<b id="title-down-navbar">C 7#9</b>
+							<br/>
+							<img src="img/chords/c/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="c7sharp9.play()" class="button-chords btn-c7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/>
+							<b id="title-down-navbar">C 9</b>
+							<br/>
+							<img src="img/chords/c/9.png" class="chord-img" />
+							<br/><br/>
+							<button onmousedown="c9.play()" class="button-chords btn-c9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--c#-->
+					<div class="right-ccs nodisplay right-bloc-tune">
+						<div class="navbar">
+							<ul>
+								<li><a class="major">C#major</a></li>
+								<li><a class="minor">C#minor</a></li>
+								<li><a class="5">C#5</a></li>
+								<li><a class="7">C#7</a></li>
+								<li><a class="maj7">C#maj7</a></li>
+								<li><a class="m7">C#m7</a></li>
+								<li><a class="sus4">C#sus4</a></li>
+								<li><a class="add9">C#add9</a></li>
+								<li><a class="sus2">C#sus2</a></li>
+								<li><a class="7sus4">C#7sus4</a></li>
+								<li><a class="7cs9">C#7#9</a></li>
+								<li><a class="9">C#9</a></li>
+							</ul>
+						</div>
+						<!--c# major-->
+						<div class="down-navbar bloc-major">
+							<br/>	
+							<b id="title-down-navbar">C# Major</b> 
+							<br/>
+							<img src="img/chords/csharp/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharpmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#minor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/>
+							<b id="title-down-navbar">C# Minor</b>
+							<br/>
+							<img src="img/chords/csharp/minor.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-csharpminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/>
+							<b id="title-down-navbar">C# 5</b>
+							<br/>
+							<img src="img/chords/csharp/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharp5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/>
+							<b id="title-down-navbar">C# 7</b>
+							<br/>
+							<img src="img/chords/csharp/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharp7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#maj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/>
+							<b id="title-down-navbar">C# Maj7</b>
+							<br/>
+							<img src="img/chords/csharp/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharpmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#m7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/>
+							<b id="title-down-navbar">C# M7</b>
+							<br/>
+							<img src="img/chords/csharp/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharpm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#sus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/>
+							<b id="title-down-navbar">C# Sus4</b>
+							<br/>
+							<img src="img/chords/csharp/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharpsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#add9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/>
+							<b id="title-down-navbar">C# Add9</b>
+							<br/>
+							<img src="img/chords/csharp/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharpadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#sus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/>
+							<b id="title-down-navbar">C# Sus2</b>
+							<br/>
+							<img src="img/chords/csharp/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharpsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/>
+							<b id="title-down-navbar">C# 7sus4</b>
+							<br/>
+							<img src="img/chords/csharp/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharp7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<b id="title-down-navbar">C# 7#9</b>
+							<br/>
+							<img src="img/chords/csharp/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-csharp7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c#9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<b id="title-down-navbar">C# 9</b>
+							<br/>
+							<img src="img/chords/csharp/9.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-csharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--d-->
+					<div class="right-d nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Dmajor</a></li>
+								<li><a class="minor">Dminor</a></li>
+								<li><a class="5">D5</a></li>
+								<li><a class="7">D7</a></li>
+								<li><a class="maj7">Dmaj7</a></li>
+								<li><a class="m7">Dm7</a></li> 
+								<li><a class="sus4">Dsus4</a></li>
+								<li><a class="add9">Dadd9</a></li>
+								<li><a class="sus2">Dsus2</a></li>
+								<li><a class="7sus4">D7sus4</a></li>
+								<li><a class="7cs9">D7#9</a></li>
+								<li><a class="9">D9</a></li>
+							</ul>
+						</div>
+						<!--d major-->
+						<div class="down-navbar bloc-major">
+							<br/>
+								<b id="title-down-navbar">D Major</b>
+							<br/>
+							<img src="img/chords/d/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--dminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">D Minor</b>
+							<br/>
+							<img src="img/chords/d/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">D 5</b>
+							<br/>
+							<img src="img/chords/d/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-d5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">D 7</b>
+							<br/>
+							<img src="img/chords/d/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-d7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--dmaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">D Maj7</b>
+							<br/>
+							<img src="img/chords/d/maj7.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-dmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--dm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">D M7</b>
+							<br/>
+							<img src="img/chords/d/m7.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-dm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--dsus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">D Sus4</b>
+							<br/>
+							<img src="img/chords/d/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cadd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">D Add9</b>
+							<br/>
+							<img src="img/chords/d/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--dsus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">D Sus2</b>
+							<br/>
+							<img src="img/chords/d/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">D 7sus4</b>
+							<br/>
+							<img src="img/chords/d/7sus4.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-d7sus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">D 7#9</b>
+							<br/>
+							<img src="img/chords/d/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-d7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">D 9</b>
+							<br/>
+							<img src="img/chords/d/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-d9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>	
+						</div>
+					</div>
+					<!--d#-->
+					<div class="right-dcs nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">D#major</a></li>
+								<li><a class="minor">D#minor</a></li>
+								<li><a class="5">D#5</a></li>
+								<li><a class="7">D#7</a></li>
+								<li><a class="maj7">D#maj7</a></li>
+								<li><a class="m7">D#m7</a></li>
+								<li><a class="sus4">D#sus4</a></li>
+								<li><a class="add9">D#add9</a></li>
+								<li><a class="sus2">D#sus2</a></li>
+								<li><a class="7sus4">D#7sus4</a></li>
+								<li><a class="7cs9">D#7#9</a></li>
+								<li><a class="9">D#9</a></li>
+							</ul>
+						</div>
+					<!--d# major-->
+						<div class="down-navbar bloc-major">
+							<br/><b id="title-down-navbar">D# Major</b> 
+							<br/>
+							<img src="img/chords/dsharp/major.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#minor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">D# Minor</b>
+							<br/>
+							<img src="img/chords/dsharp/minor.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">D# 5</b>
+							<br/>
+							<img src="img/chords/dsharp/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dsharp5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">D# 7</b>
+							<br/>
+							<img src="img/chords/dsharp/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dsharp7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#maj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">D# Maj7</b>
+							<br/>
+							<img src="img/chords/dsharp/maj7.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#m7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">D# M7</b>
+							<br/>
+							<img src="img/chords/dsharp/m7.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#sus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">D# Sus4</b>
+							<br/>
+							<img src="img/chords/dsharp/sus4.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#add9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">D# Add9</b>
+							<br/>
+							<img src="img/chords/dsharp/add9.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#sus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">D# Sus2</b>
+							<br/>
+							<img src="img/chords/dsharp/sus2.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharpsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">D# 7sus4</b>
+							<br/>
+							<img src="img/chords/dsharp/7sus4.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharp7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--d#7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+						<br/>	<b id="title-down-navbar">D# 7#9</b>
+							<br/>
+							<img src="img/chords/dsharp/7sharp9.png" class="chord-img" />	
+							<br/><br/>
+							<button class="button-chords btn-dsharp7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">D# 9</b>
+							<br/>
+							<img src="img/chords/dsharp/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-dsharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--e-->
+					<div class="right-e nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Emajor</a></li>
+								<li><a class="minor">Eminor</a></li>
+								<li><a class="5">E5</a></li>
+								<li><a class="7">E7</a></li>
+								<li><a class="maj7">Emaj7</a></li>
+								<li><a class="m7">Em7</a></li>
+								<li><a class="sus4">Esus4</a></li>
+								<li><a class="add9">Eadd9</a></li>
+								<li><a class="sus2">Esus2</a></li>
+								<li><a class="7sus4">E7sus4</a></li>
+								<li><a class="7cs9">E7#9</a></li>
+								<li><a class="9">E9</a></li>
+							</ul>
+						</div>					
+					<!--e major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">E Major</b> 
+							<br/>
+							<img src="img/chords/e/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-emajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--eminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">E Minor</b>
+							<br/>
+							<img src="img/chords/e/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-eminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--e5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">E 5</b>
+							<br/>
+							<img src="img/chords/e/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-e5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--e7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">E 7</b>
+							<br/>
+							<img src="img/chords/e/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-e7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--emaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">E Maj7</b>
+							<br/>
+							<img src="img/chords/e/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-emaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--em7-->
+						<div class="down-navbar nodisplay bloc-m7">
+						<br/>	<b id="title-down-navbar">E M7</b>
+							<br/>
+							<img src="img/chords/e/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-em7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--esus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+						<br/>	<b id="title-down-navbar">E Sus4</b>
+							<br/>
+							<img src="img/chords/e/sus4.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-esus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--eadd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">E Add9</b>
+							<br/>
+							<img src="img/chords/e/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-eadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--csus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">E Sus2</b>
+							<br/>
+							<img src="img/chords/e/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-esus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--e7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">E 7sus4</b>
+							<br/>
+							<img src="img/chords/e/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-e7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--e7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">E 7#9</b>
+							<br/>
+							<img src="img/chords/e/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-e7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--c9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">E 9</b>
+							<br/>
+							<img src="img/chords/e/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-e9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--f-->
+					<div class="right-f nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Fmajor</a></li>
+								<li><a class="minor">Fminor</a></li>
+								<li><a class="5">F5</a></li>
+								<li><a class="7">F7</a></li>
+								<li><a class="maj7">Fmaj7</a></li>
+								<li><a class="m7">Fm7</a></li>
+								<li><a class="sus4">Fsus4</a></li>
+								<li><a class="add9">Fadd9</a></li>
+								<li><a class="sus2">Fsus2</a></li>
+								<li><a class="7sus4">F7sus4</a></li>
+								<li><a class="7cs9">F7#9</a></li>
+								<li><a class="9">F9</a></li>
+							</ul>
+						</div>
+					<!--f major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">F Major</b> 
+							<br/>
+							<img src="img/chords/f/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--fminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">F Minor</b>
+							<br/>
+							<img src="img/chords/f/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">F 5</b>
+							<br/>
+							<img src="img/chords/f/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-f5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">F 7</b>
+							<br/>
+							<img src="img/chords/f/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-f7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--fmaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">F Maj7</b>
+							<br/>
+							<img src="img/chords/f/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">F M7</b>
+							<br/>
+							<img src="img/chords/f/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--fsus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">F Sus4</b>
+							<br/>
+							<img src="img/chords/f/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--fadd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">F Add9</b>
+							<br/>
+							<img src="img/chords/f/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--csus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">F Sus2</b>
+							<br/>
+							<img src="img/chords/f/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+						<br/>	<b id="title-down-navbar">F 7sus4</b>
+							<br/>
+							<img src="img/chords/f/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">F 7#9</b>
+							<br/>
+							<img src="img/chords/f/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-f7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">F 9</b>
+							<br/>
+							<img src="img/chords/f/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-f9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--f#-->
+					<div class="right-fcs nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">F#major</a></li>
+								<li><a class="minor">F#minor</a></li>
+								<li><a class="5">F#5</a></li>
+								<li><a class="7">F#7</a></li>
+								<li><a class="maj7">F#maj7</a></li>
+								<li><a class="m7">F#m7</a></li>
+								<li><a class="sus4">F#sus4</a></li>
+								<li><a class="add9">F#add9</a></li>
+								<li><a class="sus2">F#sus2</a></li>
+								<li><a class="7sus4">F#7sus4</a></li>
+								<li><a class="7cs9">F#7#9</a></li>
+								<li><a class="9">F#9</a></li>
+							</ul>
+						</div>
+						<!--f# major-->
+						<div class="down-navbar bloc-major">
+							<br/><b id="title-down-navbar">F# Major</b> 
+							<br/>
+							<img src="img/chords/fsharp/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#minor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">F# Minor</b>
+							<br/>
+							<img src="img/chords/fsharp/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">F# 5</b>
+							<br/>
+							<img src="img/chords/fsharp/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharp5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">F# 7</b>
+							<br/>
+							<img src="img/chords/fsharp/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharp7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#maj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">F# Maj7</b>
+							<br/>
+							<img src="img/chords/fsharp/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--cm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">F# M7</b>
+							<br/>
+							<img src="img/chords/fsharp/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#sus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">F# Sus4</b>
+							<br/>
+							<img src="img/chords/fsharp/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#add9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">F# Add9</b>
+							<br/>
+							<img src="img/chords/fsharp/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#sus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">F# Sus2</b>
+							<br/>
+							<img src="img/chords/fsharp/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharpsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">F# 7sus4</b>
+							<br/>
+							<img src="img/chords/fsharp/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharp7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--f#7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+						<br/>	<b id="title-down-navbar">F# 7#9</b>
+							<br/>
+							<img src="img/chords/fsharp/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-fsharp7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>	
+						</div>
+						<!--f#9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">F# 9</b>
+							<br/>
+							<img src="img/chords/fsharp/9.png" class="chord-img" />
+							
+							<br/><br/>
+							<button class="button-chords btn-fsharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--g-->
+					<div class="right-g nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Gmajor</a></li>
+								<li><a class="minor">Gminor</a></li>
+								<li><a class="5">G5</a></li>
+								<li><a class="7">G7</a></li>
+								<li><a class="maj7">Gmaj7</a></li>
+								<li><a class="m7">Gm7</a></li>
+								<li><a class="sus4">Gsus4</a></li>
+								<li><a class="add9">Gadd9</a></li>
+								<li><a class="sus2">Gsus2</a></li>
+								<li><a class="7sus4">G7sus4</a></li>
+								<li><a class="7cs9">G7#9</a></li>
+								<li><a class="9">G9</a></li>
+							</ul>
+						</div>
+						<!--g major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">G Major</b>
+							<br/>
+							<img src="img/chords/g/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--gminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">G Minor</b>
+							<br/>
+							<img src="img/chords/g/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">G 5</b>
+							<br/>
+							<img src="img/chords/g/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-g5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">G 7</b>
+							<br/>
+							<img src="img/chords/g/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-g7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>	
+						</div>
+						<!--gmaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">G Maj7</b>
+							<br/>
+							<img src="img/chords/g/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--gm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">G M7</b>
+							<br/>
+							<img src="img/chords/g/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--gsus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">G Sus4</b>
+							<br/>
+							<img src="img/chords/g/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--gadd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">G Add9</b>
+							<br/>
+							<img src="img/chords/g/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--gsus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">G Sus2</b>
+							<br/>
+							<img src="img/chords/g/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">G 7sus4</b>
+							<br/>
+							<img src="img/chords/g/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-g7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">G 7#9</b>
+							<br/>
+							<img src="img/chords/g/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-g7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">G 9</b>
+							<br/>
+							<img src="img/chords/g/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-g9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--g#-->
+					<div class="right-gcs nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">G#major</a></li>
+								<li><a class="minor">G#minor</a></li>
+								<li><a class="5">G#5</a></li>
+								<li><a class="7">G#7</a></li>
+								<li><a class="maj7">G#maj7</a></li>
+								<li><a class="m7">G#m7</a></li>
+								<li><a class="sus4">G#sus4</a></li>
+								<li><a class="add9">G#add9</a></li>
+								<li><a class="sus2">G#sus2</a></li>
+								<li><a class="7sus4">G#7sus4</a></li>
+								<li><a class="7cs9">G#7#9</a></li>
+								<li><a class="9">G#9</a></li>
+							</ul>
+						</div>
+						<!--g# major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">G# Major</b>
+							<br/>
+							<img src="img/chords/gsharp/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#minor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">G# Minor</b>
+							<br/>
+							<img src="img/chords/gsharp/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">G# 5</b>
+							<br/>
+							<img src="img/chords/gsharp/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharp5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">G# 7</b>
+							<br/>
+							<img src="img/chords/gsharp/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharp7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#maj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">G# Maj7</b>
+							<br/>
+							<img src="img/chords/gsharp/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--gm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">G# M7</b>
+							<br/>
+							<img src="img/chords/gsharp/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#sus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">G# Sus4</b>
+							<br/>
+							<img src="img/chords/gsharp/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#add9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">G# Add9</b>
+							<br/>
+							<img src="img/chords/gsharp/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#sus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">G# Sus2</b>
+							<br/>
+							<img src="img/chords/gsharp/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharpsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">G# 7sus4</b>
+							<br/>
+							<img src="img/chords/gsharp/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharp7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">G# 7#9</b>
+							<br/>
+							<img src="img/chords/gsharp/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharp7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--g#9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">G# 9</b>
+							<br/>
+							<img src="img/chords/gsharp/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-gsharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--a-->
+					<div class="right-a nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Amajor</a></li>
+								<li><a class="minor">Aminor</a></li>
+								<li><a class="5">A5</a></li>
+								<li><a class="7">A7</a></li>
+								<li><a class="maj7">Amaj7</a></li>
+								<li><a class="m7">Am7</a></li>
+								<li><a class="sus4">Asus4</a></li>
+								<li><a class="add9">Aadd9</a></li>
+								<li><a class="sus2">Asus2</a></li>
+								<li><a class="7sus4">A7sus4</a></li>
+								<li><a class="7cs9">A7#9</a></li>
+								<li><a class="9">A9</a></li>
+							</ul>
+						</div>
+						<!--a major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">A Major</b> 
+							<br/>
+							<img src="img/chords/a/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-amajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--aminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">A Minor</b>
+							<br/>
+							<img src="img/chords/a/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-aminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">A 5</b>
+							<br/>
+							<img src="img/chords/a/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-a5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">A 7</b>
+							<br/>
+							<img src="img/chords/a/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-a7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--amaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">A Maj7</b>
+							<br/>
+							<img src="img/chords/a/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-amaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--am7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">A M7</b>
+							<br/>
+							<img src="img/chords/a/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-am7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--asus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">A Sus4</b>
+							<br/>
+							<img src="img/chords/a/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--aadd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">A Add9</b>
+							<br/>
+							<img src="img/chords/a/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-aadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--asus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">A Sus2</b>
+							<br/>
+							<img src="img/chords/a/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">A 7sus4</b>
+							<br/>
+							<img src="img/chords/a/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-a7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">A 7#9</b>
+							<br/>
+							<img src="img/chords/a/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-a7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">A 9</b>
+							<br/>
+							<img src="img/chords/a/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-a9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--a#-->
+					<div class="right-acs nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">A#major</a></li>
+								<li><a class="minor">A#minor</a></li>
+								<li><a class="5">A#5</a></li>
+								<li><a class="7">A#7</a></li>
+								<li><a class="maj7">A#maj7</a></li>
+								<li><a class="m7">A#m7</a></li>
+								<li><a class="sus4">A#sus4</a></li>
+								<li><a class="add9">A#add9</a></li>
+								<li><a class="sus2">A#sus2</a></li>
+								<li><a class="7sus4">A#7sus4</a></li>
+								<li><a class="7cs9">A#7#9</a></li>
+								<li><a class="9">A#9</a></li>
+							</ul>
+						</div>
+						<!--a# major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">A# Major</b> 
+							<br/>
+							<img src="img/chords/asharp/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#minor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">A# Minor</b>
+							<br/>
+							<img src="img/chords/asharp/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">A# 5</b>
+							<br/>
+							<img src="img/chords/asharp/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharp5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">A# 7</b>
+							<br/>
+							<img src="img/chords/asharp/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharp7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#maj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">A# Maj7</b>
+							<br/>
+							<img src="img/chords/asharp/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#m7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">A# M7</b>
+							<br/>
+							<img src="img/chords/asharp/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#sus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">A# Sus4</b>
+							<br/>
+							<img src="img/chords/asharp/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#add9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+							<br/><b id="title-down-navbar">A# Add9</b>
+							<br/>
+							<img src="img/chords/asharp/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpadd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#sus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+							<br/><b id="title-down-navbar">A# Sus2</b>
+							<br/>
+							<img src="img/chords/asharp/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharpsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">A# 7sus4</b>
+							<br/>
+							<img src="img/chords/asharp/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharp7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">A# 7#9</b>
+							<br/>
+							<img src="img/chords/asharp/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharp7sharp"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--a#9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">A# 9</b>
+							<br/>
+							<img src="img/chords/asharp/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-asharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+					</div>
+					<!--b-->
+					<div class="right-b nodisplay right-bloc-tune" >
+						<div class="navbar">
+							<ul>
+								<li><a class="major">Bmajor</a></li>
+								<li><a class="minor">Bminor</a></li>
+								<li><a class="5">B5</a></li>
+								<li><a class="7">B7</a></li>
+								<li><a class="maj7">Bmaj7</a></li>
+								<li><a class="m7">Bm7</a></li>
+								<li><a class="sus4">Bsus4</a></li>
+								<li><a class="add9">Badd9</a></li>
+								<li><a class="sus2">Bsus2</a></li>
+								<li><a class="7sus4">B7sus4</a></li>
+								<li><a class="7cs9">B7#9</a></li>
+								<li><a class="9">B9</a></li>
+							</ul>
+						</div>
+						<!--b major-->
+						<div class="down-navbar bloc-major">
+								<br/><b id="title-down-navbar">B Major</b> 
+							<br/>
+							<img src="img/chords/b/major.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-bmajor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--bminor-->
+						<div class="down-navbar bloc-minor nodisplay">
+							<br/><b id="title-down-navbar">B Minor</b>
+							<br/>
+							<img src="img/chords/b/minor.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-bminor"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--b5-->
+						<div class="down-navbar bloc-5 nodisplay">
+							<br/><b id="title-down-navbar">B 5</b>
+							<br/>
+							<img src="img/chords/b/5.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-b5"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--b7-->
+						<div class="down-navbar nodisplay bloc-7">
+							<br/><b id="title-down-navbar">B 7</b>
+							<br/>
+							<img src="img/chords/b/7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-b7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--bmaj7-->
+						<div class="down-navbar nodisplay bloc-maj7">
+							<br/><b id="title-down-navbar">B Maj7</b>
+							<br/>
+							<img src="img/chords/b/maj7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-bmaj7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--bm7-->
+						<div class="down-navbar nodisplay bloc-m7">
+							<br/><b id="title-down-navbar">B M7</b>
+							<br/>
+							<img src="img/chords/b/m7.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-bm7"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--bsus4-->
+						<div class="nodisplay bloc-sus4  down-navbar" >
+							<br/><b id="title-down-navbar">B Sus4</b>
+							<br/>
+							<img src="img/chords/b/sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-bsus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--badd9-->
+						<div class="down-navbar bloc-add9 nodisplay">
+						<br/>	<b id="title-down-navbar">B Add9</b>
+							<br/>
+							<img src="img/chords/b/add9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-badd9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--bsus2-->
+						<div class="nodisplay bloc-sus2 down-navbar">
+						<br/>	<b id="title-down-navbar">B Sus2</b>
+							<br/>
+							<img src="img/chords/b/sus2.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-bsus2"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--b7sus4-->
+						<div class="nodisplay bloc-7sus4 down-navbar">
+							<br/><b id="title-down-navbar">B 7sus4</b>
+							<br/>
+							<img src="img/chords/b/7sus4.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-b7sus4"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--b7#9-->
+						<div class="nodisplay down-navbar bloc-7cs9">
+							<br/><b id="title-down-navbar">B 7#9</b>
+							<br/>
+							<img src="img/chords/b/7sharp9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-b7sharp9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+						</div>
+						<!--b9-->
+						<div class="nodisplay down-navbar bloc-9">
+							<br/><b id="title-down-navbar">B 9</b>
+							<br/>
+							<img src="img/chords/b/9.png" class="chord-img" />
+							<br/><br/>
+							<button class="button-chords btn-b9"><i class="fa fa-volume-up" aria-hidden="true"></i></button>			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
